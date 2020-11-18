@@ -31,7 +31,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         {covidData.map((cardData, i) => {
           const style = cardData.styleName;
           return (
-            <Grid item key={i} component={Card} xs={12} md={3} className={`${styles.card}, ${uniqueStyle(cardData.styleName)}`}>
+            <Grid item key={i} component={Card} xs={12} md={3} className={`${styles.card} ${uniqueStyle(cardData.styleName)}`}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>{cardData.title}</Typography>
               <Typography variant="h5">
